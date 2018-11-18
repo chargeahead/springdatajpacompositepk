@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"></meta>
+<title>Person Form</title>
+</head>
+<body>
+  <h1>Person Form</h1>
+  <div>
+    <form method="post" id="myform" th:object="${person}" action="/person/saveaction">
+      Full Name: <input type="text" id="fullname" name="fullname"></input>
+      Location Id: <input type="number" id="locId" name="locId"></input>
+      Age: <input type="number" id="age" name="age"></input>
+      <button type="submit"></button>
+    </form>
+  </div>
+</body>
+</html>
